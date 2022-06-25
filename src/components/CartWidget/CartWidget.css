@@ -1,0 +1,11 @@
+.cartSection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .cartSection p {
+    margin-left: 10px;
+  }
+  .iconCart {
+    cursor: pointer;
+  }
