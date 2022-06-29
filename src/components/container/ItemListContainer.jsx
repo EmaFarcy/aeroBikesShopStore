@@ -21,17 +21,17 @@ const ItemListContainer = () => {
           });
       }, []);
 
-    return loading ? (
+      return loading ? (
         <div className="text-center mt-4">
-        <Spinner animation="border" role="status" variant="info" />
-      </div>
-    ) : (
-      <Container className="d-flex justify-content-evenly mt-4 flex-wrap w-100">
-        {products.map((product) => (
-          <Item product={product} key={product.id} />
-        ))}
-      </Container>
-    );
-  };
+          <Spinner animation="border" role="status" variant="info" />
+        </div>
+      ) : (
+        <Container className="d-flex justify-content-evenly mt-4 flex-wrap w-100">
+          {products.map((product) => (
+            <Item producto={product} key={product.id} />
+          ))}
+        </Container>
+      );
+    };
 
 export default ItemListContainer;

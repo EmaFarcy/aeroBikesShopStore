@@ -1,10 +1,15 @@
+import image1 from "../../assets/images/img1_tarmac.jpg";
+import image2 from "../../assets/images/img2_epic.jpg";
+import image3 from "../../assets/images/img3_rockhopper.jpg";
+import image4 from "../../assets/images/img4_Levo.jpg";
+
 const products = [
     {  
-       id:1,
+       id: 1,
        title: "Sworks",
        model: "Venge",
        price: 5000,
-       img: "../../assets/images/img1_tarmac.jpg" 
+       image: image1 
     },
 
     {   
@@ -12,7 +17,7 @@ const products = [
         title: "S-works",
         model: "Epic-MTB 2021",
         price: 4500,
-        img: "../../assets/images/img2_epic.jpg" 
+        image: image2 
      },
 
      {  
@@ -20,14 +25,14 @@ const products = [
         title: "Specialized",
         model: "Tarmac SL7 Comp 2022",
         price: 3000,
-        img: "../../assets/images/img3_rockhopper.jpg" 
+        image: image3 
    },
 
    {    id:4,
         title: "Specialized",
         model: "Turbo Levo",
         price: 5000,
-        img: "../../assets/images/img4_Levo.jpg" 
+        image: image4
    }
 ];
 

@@ -1,12 +1,10 @@
-import { useState } from "react";
-import { useEffect } from "react";
 import Item from "../Item/Item";
 
-function ItemList({ product }) {
-  console.log(product);
+function ItemList({ producto }) {
+  console.log(producto);
   return (
     <div className="w-25 px-1">
-      <Item products={product} />
+      <Item productos={producto} />
     </div>
   );
 }
