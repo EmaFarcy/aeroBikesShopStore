@@ -8,9 +8,11 @@ function App() {
   return (
     <div className="App" style={objStyle}>
       <NavBar />
+      
         <br />
       <body className="App-body">
-        <ItemListContainer greetings="Hello and Welcome to Aero Bikes Shop Store! (coming soon)" />
+      <ItemListContainer />
+        
       </body>
     </div>
   );
