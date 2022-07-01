@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 import "./Item.css"
 
 
-function Item({producto}) {
-    const {model, price, image} = producto;
+function Item({products}) {
+    const {model, price, image} = products;
 
     return (  
             <Card className="bg-dark text-white" style={{ width: '18rem' }}>

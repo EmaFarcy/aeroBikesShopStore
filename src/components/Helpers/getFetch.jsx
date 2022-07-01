@@ -36,8 +36,6 @@ const products = [
    }
 ];
 
-
-
 export const gFetch = new Promise((resolve, reject) => { //try catch
     let condition = true;
 
