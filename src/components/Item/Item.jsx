@@ -14,7 +14,7 @@ function Item({products}) {
                     <Card.Title className="cardTitle">{model}</Card.Title>
                     <Card.Text className="carText">$$ {price}</Card.Text>
                         <Link 
-                            to={`/detail/${id}`}
+                            to={`/details/${id}`}
                             className="css-button-sliding-to-left--sky text-decoration-none"
                         >
                             <p ClassName="textButton">Read More</p>
