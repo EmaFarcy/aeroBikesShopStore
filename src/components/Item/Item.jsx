@@ -1,12 +1,11 @@
 import React from 'react';
 import {Card} from "react-bootstrap"
-import {Button} from "react-bootstrap"
-import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import "./Item.css"
 
 
 function Item({products}) {
-    const {model, price, image} = products;
+    const {id, model, price, image} = products;
 
     return (  
             <Card className="bg-dark text-white" style={{ width: '18rem' }}>
@@ -14,7 +13,12 @@ function Item({products}) {
                 <Card.Body>
                     <Card.Title className="cardTitle">{model}</Card.Title>
                     <Card.Text className="carText">$$ {price}</Card.Text>
-                        <Button variant="primary">Read More</Button>
+                        <Link 
+                            to={`/detail/${id}`}
+                            className="css-button-sliding-to-left--sky text-decoration-none"
+                        >
+                            <p ClassName="textButton">Read More</p>
+                        </Link>
                 </Card.Body>
             </Card>
     ); 

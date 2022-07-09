@@ -1,3 +1,49 @@
 .carText{
     font-size: 0.8em;
 }
+
+.textButton{
+    width: 20%;
+    font-size: 20%;
+    color: #fff;
+    background-color: #000;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin-top: 0.5em;
+}
+
+.css-button-sliding-to-left--sky {
+    min-width: 100px;
+    height: 30px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: rgb(22, 21, 21);
+    overflow: hidden;
+    border: 2px solid #4433ff;
+    color: #33fff1;
+  }
+  .css-button-sliding-to-left--sky:hover {
+    color: #fff;
+  }
+  .css-button-sliding-to-left--sky:hover:after {
+    width: 100%;
+  }
+  .css-button-sliding-to-left--sky:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #4433ff;
+  }
