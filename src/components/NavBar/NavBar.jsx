@@ -19,7 +19,7 @@ const NavBar= () => {
 		    	<header>
 			    	<div id="menu">
 				    	<nav className="nav1">
-							<img src={LogoAero} alt="LogoAero" style={styles.logo_aero}></img>
+							<NavLink to='/'><img src={LogoAero} alt="LogoAero" style={styles.logo_aero}></img></NavLink>
 					    	<ul>
 							<li><NavLink to='/'>Home</NavLink></li>
 					    	<li><NavLink to='about'>About Us</NavLink></li>

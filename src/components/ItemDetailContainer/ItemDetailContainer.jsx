@@ -28,7 +28,7 @@ const ItemDetailContainer = () => {
       <Spinner animation="border" role="status" variant="info" />
     </div>
   ) : (
-    <ItemListBikes profesion={profesional} />
+    <ItemListBikes bikes={profesional} />
 );
 };
 

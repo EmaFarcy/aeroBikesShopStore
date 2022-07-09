@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
-function ItemDetailBikes ({ profesional }) {
-  const { id, model, frameset, image } = profesional;
+function ItemDetailBikes ({ bikes }) {
+  const { id, image, model, frameset } = bikes;
+  
   return (
     <Card className="text-center mt-3 w-25 mx-1 shadow">
       <Card.Img variant="top" src={image} />
@@ -14,9 +15,8 @@ function ItemDetailBikes ({ profesional }) {
         <Card.Text>{frameset}</Card.Text>
         <FontAwesomeIcon icon={faStar} />
         <Link
-          to={`/cart/${id}`}
-          className="css-button-sliding-to-left--sky text-decoration-none"
-        >
+          type="button" to={`/cart/${id}`}
+          className="btn btn-info">
           Buy It
         </Link>
       </Card.Body>
