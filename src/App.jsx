@@ -20,6 +20,7 @@ function App() {
 			      </div>
             <Routes>
               <Route index path="/" element={<ItemListContainer />}/>
+              <Route path= "/:type" element={<ItemListContainer />}/>
               <Route path="/about" element={<AboutUs />}/>
               <Route path="/products/*" element={<Products />}/>
               <Route path="/details/:id" element={<Professional />}/> {/*este me tiene que llevar al detalle de una bicicleta Importo aca products?*/}
