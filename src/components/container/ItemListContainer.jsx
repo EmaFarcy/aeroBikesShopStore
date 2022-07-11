@@ -4,11 +4,13 @@ import { gFetch } from "../Helpers/getFetch";
 import ItemList from "../ItemList/ItemList";
 import { Spinner } from "react-bootstrap";
 import { useParams } from "react-router-dom";
+import HomeImage from '../../assets/images/home1.jpg'
 
 const ItemListContainer = () => {
     const [products, setProducts]= useState([]);
     const [loading, setLoading]= useState([true]);
     const { type } = useParams();
+    <img src={HomeImage} alt="HomeImage" />
 
     useEffect(() => {
         gFetch

@@ -22,11 +22,12 @@ const NavBar= () => {
 							<NavLink to='/'><img src={LogoAero} alt="LogoAero" style={styles.logo_aero}></img></NavLink>
 					    	<ul>
 							<li><NavLink to='/'>Home</NavLink></li>
-					    	<li><NavLink to='about'>About Us</NavLink></li>
+					    	<li><NavLink to='/road'>Road Bikes</NavLink></li>
+							<li><NavLink to='/mountain'>Mountain Bikes</NavLink></li>
 							<Link to="/Cart">
 								<li><a href="/"><CartWidget /></a></li>
 							</Link>
-					    	<li><a href="/">Accesories</a></li>
+					    	<li><a href="/about">About Us</a></li>
 							<li><a href="/">Contact</a></li>
 							<li><a href="/">LogIn</a></li>
 				    		</ul>

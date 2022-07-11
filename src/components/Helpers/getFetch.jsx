@@ -6,6 +6,7 @@ import image4 from "../../assets/images/img4_Levo.jpg";
 const products = [
     {  
        id: 1,
+       type: "road",
        title: "Sworks",
        model: "Venge",
        price: 5000,
@@ -15,6 +16,7 @@ const products = [
     {   
         id:2,
         title: "S-works",
+        type: "mountain",
         model: "Epic-MTB 2021",
         price: 4500,
         image: image2 
@@ -22,6 +24,7 @@ const products = [
 
      {  
         id:3,
+        type: "road",
         title: "Specialized",
         model: "Tarmac SL7 Comp 2022",
         price: 3000,
@@ -29,6 +32,7 @@ const products = [
    },
 
    {    id:4,
+        type: "mountain",
         title: "Specialized",
         model: "Turbo Levo",
         price: 5000,
