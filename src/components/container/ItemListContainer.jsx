@@ -10,12 +10,12 @@ const ItemListContainer = () => {
     const [products, setProducts]= useState([]);
     const [loading, setLoading]= useState([true]);
     const { type } = useParams();
-    <img src={HomeImage} alt="HomeImage" />
 
     useEffect(() => {
-        gFetch
-          .then((resp) => {
-            setProducts(resp.filter((element)=> element.type===type));
+        if (type) {
+          gFetch
+            .then((resp) => {
+              setProducts(resp.filter((element)=> element.type===type));
           })
           .catch((rej) => {
             console.log(rej);
@@ -23,7 +23,19 @@ const ItemListContainer = () => {
           .finally(() => {
             setLoading(false);
           });
-      }, [type]);
+        }else{
+          gFetch
+            .then((resp) => {
+              setProducts(resp);
+          })
+          .catch((rej) => {
+            console.log(rej);
+          })
+          .finally(() => {
+            setLoading(false);
+          });  
+      } 
+    },[type]);
 
       return loading ? (
         <div className="text-center mt-4">

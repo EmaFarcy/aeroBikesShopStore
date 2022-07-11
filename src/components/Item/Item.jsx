@@ -1,4 +1,6 @@
 import React from 'react';
+import { useContext } from 'react';
+import { CartContext } from '../context/CartContext';
 import {Card} from "react-bootstrap"
 import { Link } from 'react-router-dom';
 import "./Item.css"
@@ -6,6 +8,9 @@ import "./Item.css"
 
 function Item({products}) {
     const {id, model, price, image} = products;
+
+    const cartContext = useContext(CartContext);
+    const {cart, setCart}= cartContext;
 
     return (  
             <Card className="bg-dark text-white" style={{ width: '18rem' }}>

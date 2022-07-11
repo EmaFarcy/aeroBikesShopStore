@@ -49,7 +49,7 @@ function Professional() {
             <Link
               type="button" to="/cart"
               className="btn btn-info">
-              Buy It
+              Add To Cart
             </Link>
           </div>
         </div>
