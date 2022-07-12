@@ -1,16 +1,14 @@
-import React from 'react';
-import { useContext } from 'react';
-import { CartContext } from '../context/CartContext';
+import React, { useContext } from 'react';
 import {Card} from "react-bootstrap"
 import { Link } from 'react-router-dom';
+import { CartContext } from '../../context/CartContext';
 import "./Item.css"
 
 
 function Item({products}) {
     const {id, model, price, image} = products;
-
-    const cartContext = useContext(CartContext);
-    const {cart, setCart}= cartContext;
+    const nombre= useContext(CartContext);
+    console.log('Item ', nombre);
 
     return (  
             <Card className="bg-dark text-white" style={{ width: '18rem' }}>

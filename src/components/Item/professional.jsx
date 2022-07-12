@@ -1,14 +1,25 @@
 import React, { useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { Spinner } from "react-bootstrap";
 import { gFetchProfesional } from "../Helpers/bikes";
 import './professional.css';
+import ItemCount from "./ItemCount";
+import { Link } from 'react-router-dom';
 
-function Professional() {
+export function Professional() {  
     const [profesional, setProfesional] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [goToCart, setGoToCart]= useState(false);
+    const onAdd = (quantity) => {
+      setGoToCart(true);
+      }
     const { id } = useParams();
+    
+    
+
+  
+
     useEffect(() => {
       gFetchProfesional
         .then((resp) =>
@@ -46,11 +57,11 @@ function Professional() {
           <div className="text-end">
           </div>
           <div className="text-end">
-            <Link
-              type="button" to="/cart"
-              className="btn btn-info">
-              Add To Cart
-            </Link>
+            {
+              goToCart
+                ? <Link to='/cart'>Save and Checkout</Link>
+                : <ItemCount initial={1} stock={3} onAdd={onAdd} />
+            } 
           </div>
         </div>
       </div>
